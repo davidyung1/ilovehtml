@@ -1,0 +1,21 @@
+{
+  "name": "ilovehtml",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "preview": "vite preview --host 127.0.0.1",
+    "package:pages": "npm run build && node scripts/package-pages.mjs"
+  },
+  "dependencies": {
+    "parse5": "^8.0.0",
+    "@fontsource/bricolage-grotesque": "^5.2.0",
+    "@fontsource/noto-sans-tc": "^5.2.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
+  }
+}
